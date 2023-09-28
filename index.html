@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Muzakky</h2>
+          <p class="sub-heading">Website</p>
+        </div>
+        <div class="features f-1">
+          <h4 class="price">DESIGN</h4>
+          <p class="item">CAT</p>
+        </div>
+        <div class="features f-2">
+          <h4 class="price">VECTOR</h4>
+          <p class="item">BILLIE</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand"><h1>Merch</h1></div>
+        <ul class="menu-list">
+          <li><a href="home">Home</a></li>
+          <li><a href="product">Products</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="gallery">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!-- services -->
+
+      <section class="services">
+        <div class="service">
+          <div class="icon">🧐</div>
+          <h3>Tutorial</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ullam aliquid corrupti incidunt tenetur veniam.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🙄</div>
+          <h3>Video Editor</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ullam aliquid corrupti incidunt tenetur veniam.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🦾</div>
+          <h3>Coding</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ullam aliquid corrupti incidunt tenetur veniam.</p>
+        </div>
+        <div class="service">
+          <div class="icon">🐣</div>
+          <h3>Bird Breeding</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ullam aliquid corrupti incidunt tenetur veniam.</p>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery">
+
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/500x500" alt="">
+        <img src="https://source.unsplash.com/random/501x501" alt="">
+        <img src="https://source.unsplash.com/random/502x502" alt="">
+        <img src="https://source.unsplash.com/random/503x503" alt="">
+        <img src="https://source.unsplash.com/random/504x504" alt="">
+        <img src="https://source.unsplash.com/random/505x505" alt="">
+        <img src="https://source.unsplash.com/random/506x506" alt="">
+        <img src="https://source.unsplash.com/random/507x507" alt="">
+        <img src="https://source.unsplash.com/random/508x508" alt="">
+        <img src="https://source.unsplash.com/random/509x509" alt="">
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
